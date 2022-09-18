@@ -1,9 +1,3 @@
-# Azure-WebApp-Docker-SSH-Setting
----
-The Dockerfile and script is for the ssh connect with Azure WebApp.
----
-[Dockerfile](Dockerfile)
-```dockerfile
 # FROM: whatever you want to use image from.
 FROM ubuntu:latest
 
@@ -22,4 +16,3 @@ RUN apt-get install -y curl
 RUN curl ${URL}/prestart.sh > /app/prestart.sh
 RUN sh /app/prestart.sh "${URL}"
 # RUN sh ./prestart.sh "${Authorization}" "${URL}"
-```
